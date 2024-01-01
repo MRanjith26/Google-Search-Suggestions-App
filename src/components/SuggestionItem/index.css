@@ -1,0 +1,40 @@
+/* Write your CSS here */
+
+.suggestion-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: top;
+}
+.suggestion {
+  font-family: 'Roboto';
+}
+.arrow {
+  width: 25px;
+}
+.button {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 576px), (min-width: 576px) {
+  .suggestion-card {
+    gap: 100px;
+    width: 300px;
+  }
+  .suggestion {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px), (min-width: 992px), (min-width: 1200px) {
+  .suggestion-card {
+    gap: 210px;
+    width: 450px;
+  }
+  .suggestion {
+    font-size: 17px;
+  }
+}
